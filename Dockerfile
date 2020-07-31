@@ -2,6 +2,8 @@ FROM node:12-alpine
 
 LABEL MAINTAINER = 'Patrick Bouffel <patrick@bouffel.com>'
 
+WORKDIR /app
+
 ADD *.js package.json package-lock.json README.md /app/
 
 RUN cd app

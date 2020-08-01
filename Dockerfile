@@ -4,9 +4,9 @@ LABEL MAINTAINER = 'Patrick Bouffel <patrick@bouffel.com>'
 
 WORKDIR /app
 
-ADD *.js package.json package-lock.json README.md /app/
+ADD *.js package.json package-lock.json /app/
 
-RUN cd app
+RUN cd /app
 
 EXPOSE 3000
 

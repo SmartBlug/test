@@ -4,7 +4,7 @@ const app = express()
 const version = require('./package.json').version;
 
 app.get('/', function (req, res) {
-  res.send('Hello World 7 - version '+version)
+  res.send('Hello World 8 - version '+version)
 })
 
 app.listen(3000, function () {

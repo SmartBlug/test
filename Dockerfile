@@ -6,7 +6,8 @@ WORKDIR /app
 
 ADD *.js package.json package-lock.json /app/
 
-RUN cd /app
+RUN cd /app && \
+    npm ci
 
 EXPOSE 3000
 

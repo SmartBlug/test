@@ -1,3 +1,6 @@
+// Create a file .git/hooks/pre-commit with :
+// node pre-commit.js
+
 const fs = require('fs');
 const { execSync } = require('child_process');
 const package = require(__dirname+'/package.json');
